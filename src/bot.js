@@ -11,7 +11,7 @@ bot.on('text', async(msg) => {
     const text = msg.text;
     let users = await select('data')
     let admin = await select('admin')[0].userId
-    let st = 'hom'
+    let st = 'home'
     if(users.length) st = (users.find(el => el.userId == chatId))?.steep
     if(text == '/start'){
         bot.sendMessage(chatId, "Assalomualekum siz bu bot orqali\nopenbudget.uz saytidagi loyhamizga sms orqali ovoz berishingiz mumkin").then(data => {
@@ -98,7 +98,7 @@ bot.on('text', async(msg) => {
             })
             users.map(el => {
                 if(el.userId == chatId){
-                    el.steep = 'hom'
+                    el.steep = 'home'
                 }
             })
             await insert('data',users)
