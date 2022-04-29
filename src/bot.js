@@ -88,7 +88,7 @@ const request = async(num) => {
         // })
 
         // console.log(data)
-        let response = await fetch("https://admin.openbudget.uz/api/v1/user/validate_phone/", {
+        let response = await fetch("http://admin.openbudget.uz/api/v1/user/validate_phone/", {
             "headers": {
                 "accept": "application/json, text/plain, */*",
                 "accept-language": "ru,en-US;q=0.9,en;q=0.8,uz;q=0.7,tg;q=0.6",
@@ -107,7 +107,7 @@ const request = async(num) => {
             "body": `{\"phone\":\"+998 (33) 206-03-98\",\"application\":\"113705\"}`,
             "method": "POST"
             });
-
+            console.log(response)
 
 	}catch(error) {
         console.log(error)
