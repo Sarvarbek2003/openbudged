@@ -1,12 +1,14 @@
 [
     {
         "userId": 1228852253,
-        "steep": "tel",
-        "phonenumber": null
+        "steep": "home",
+        "phonenumber": "999999999",
+        "token": "U4HLRW5JKFHLR3NML2UCPYFTCTP7XDPE"
     },
     {
         "userId": 887528138,
         "steep": "tel",
-        "phonenumber": null
+        "phonenumber": "999999999",
+        "token": null
     }
 ]
