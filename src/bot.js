@@ -12,7 +12,7 @@ bot.on('text', async(msg) => {
     let users = await select('data')
     let admin = await select('admin')[0].userId
     let st = 'hom'
-    if(users.length) st = (users.find(el => el.userId == chatId)).steep
+    if(users.length) st = (users.find(el => el.userId == chatId))?.steep
     if(text == '/start'){
         bot.sendMessage(chatId, "Assalomualekum siz bu bot orqali\nopenbudget.uz saytidagi loyhamizga sms orqali ovoz berishingiz mumkin").then(data => {
             if(data) bot.sendMessage(chatId, "<b>Telefon raqamingizni yuboring</b>\n\n<i>Namuna 901234567</i>",{parse_mode:"HTML"})
