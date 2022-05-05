@@ -1,5 +1,5 @@
 import TelegramBot from 'node-telegram-bot-api'
-const bot = new TelegramBot('5103577026:AAEnbA3z4QQSEw3cxaKSy7Hf9kFWhxJ6ivQ', {polling: true});
+const bot = new TelegramBot('token', {polling: true});
 import fs from 'fs'
 import path from 'path'
 import  fetch from 'node-fetch'
